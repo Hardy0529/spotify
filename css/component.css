@@ -1484,6 +1484,7 @@ img{
 	.page.page1 .phone-header-text .phone-header-tittle{
 		font-size: 12px;
 		-webkit-transform : scale(0.60);
+		margin-left: 12px;
 	}
 	
 
