@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/plugins/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="stylesheet" href="css/component.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="main-img"></div>
+		<div class="main-bg"></div>
+
+		<!-- Start header -->
+		<header class="header">
+			<div class="container">
+				<div class="navbar navbar--collapse u-clearfix">
+					<a href="#" class="navbar__logo">
+						<svg viewBox="0 0 63 20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin meet">
+							<g fill-rule="evenodd" class="svelte-1gcdbl9">
+								<path
+									d="M61.842 9.506a1.02 1.02 0 0 1-1.023-1.024c0-.562.453-1.03 1.029-1.03a1.02 1.02 0 0 1 1.023 1.024 1.03 1.03 0 0 1-1.029 1.03m.006-1.952a.915.915 0 0 0-.922.928c0 .51.394.921.916.921a.916.916 0 0 0 .922-.927.908.908 0 0 0-.916-.922m.226 1.027l.29.406h-.244l-.26-.372h-.225v.372h-.204V7.912h.48c.249 0 .413.128.413.343 0 .176-.102.284-.25.326m-.172-.485h-.267v.34h.267c.133 0 .212-.065.212-.17 0-.11-.08-.17-.212-.17m-12.804-3.52a1.043 1.043 0 1 0-.001 2.086 1.043 1.043 0 0 0 0-2.087m.72 2.89h-1.454a.107.107 0 0 0-.106.107v6.346c0 .06.047.107.106.107h1.455a.107.107 0 0 0 .107-.107V7.572a.107.107 0 0 0-.107-.107m3.233.006v-.2c0-.592.227-.856.736-.856.303 0 .546.06.82.152a.106.106 0 0 0 .14-.102V5.24a.107.107 0 0 0-.076-.102 3.993 3.993 0 0 0-1.21-.174c-1.343 0-2.053.757-2.053 2.188v.308h-.699a.107.107 0 0 0-.107.106v1.257c0 .059.048.107.107.107h.699v4.99c0 .058.047.106.106.106h1.455a.107.107 0 0 0 .106-.107v-4.99h1.358l2.081 4.99c-.236.523-.468.628-.785.628-.257 0-.527-.077-.803-.228a.109.109 0 0 0-.084-.008.106.106 0 0 0-.063.058l-.493 1.081a.106.106 0 0 0 .045.138c.515.279.98.398 1.554.398 1.074 0 1.668-.5 2.191-1.847L60.6 7.617a.106.106 0 0 0-.099-.146h-1.514a.107.107 0 0 0-.1.072l-1.552 4.431-1.7-4.434a.106.106 0 0 0-.099-.069h-2.485m-5.577-.006h-1.6V5.828a.106.106 0 0 0-.107-.106h-1.455a.107.107 0 0 0-.106.106v1.637h-.7a.106.106 0 0 0-.106.107v1.25c0 .059.048.107.106.107h.7v3.234c0 1.308.65 1.97 1.934 1.97.522 0 .954-.107 1.362-.338a.106.106 0 0 0 .054-.093v-1.19a.106.106 0 0 0-.154-.096c-.28.141-.551.206-.854.206-.467 0-.675-.211-.675-.686V8.929h1.6a.106.106 0 0 0 .107-.107v-1.25a.106.106 0 0 0-.106-.107m-7.671-.133c-1.96 0-3.497 1.51-3.497 3.437 0 1.907 1.526 3.4 3.473 3.4 1.967 0 3.508-1.504 3.508-3.424 0-1.914-1.53-3.413-3.484-3.413m0 5.362c-1.043 0-1.83-.838-1.83-1.95 0-1.115.76-1.924 1.806-1.924 1.05 0 1.84.838 1.84 1.95 0 1.115-.763 1.924-1.816 1.924m-7.014-5.362c-.82 0-1.492.323-2.046.984v-.744a.107.107 0 0 0-.106-.107h-1.455a.107.107 0 0 0-.106.107v8.27c0 .058.048.106.106.106h1.455a.107.107 0 0 0 .106-.106v-2.61c.555.621 1.227.925 2.046.925 1.522 0 3.063-1.172 3.063-3.412s-1.54-3.413-3.063-3.413m1.372 3.413c0 1.14-.703 1.937-1.709 1.937-.995 0-1.745-.833-1.745-1.937s.75-1.937 1.745-1.937c.99 0 1.71.814 1.71 1.937m-8.437-1.81c-1.624-.388-1.913-.66-1.913-1.231 0-.54.508-.903 1.264-.903.732 0 1.459.275 2.22.843a.107.107 0 0 0 .15-.023l.794-1.119a.107.107 0 0 0-.02-.144c-.906-.728-1.927-1.081-3.12-1.081-1.755 0-2.98 1.052-2.98 2.559 0 1.615 1.057 2.187 2.884 2.628 1.554.358 1.817.658 1.817 1.195 0 .594-.53.963-1.385.963-.948 0-1.721-.32-2.587-1.068a.11.11 0 0 0-.078-.026.105.105 0 0 0-.073.038l-.89 1.058a.105.105 0 0 0 .011.148 5.303 5.303 0 0 0 3.581 1.373c1.89 0 3.112-1.033 3.112-2.631 0-1.351-.807-2.098-2.787-2.58M9.507.305a9.41 9.41 0 1 0 0 18.82 9.41 9.41 0 0 0 0-18.82m4.316 13.572a.586.586 0 0 1-.807.195c-2.21-1.35-4.99-1.655-8.266-.907a.586.586 0 1 1-.261-1.143c3.584-.82 6.659-.467 9.139 1.049.276.169.363.53.195.806m1.15-2.562a.734.734 0 0 1-1.008.242c-2.529-1.555-6.385-2.005-9.377-1.097a.735.735 0 0 1-.426-1.404c3.418-1.037 7.666-.534 10.57 1.25a.734.734 0 0 1 .242 1.01m.1-2.669C12.04 6.846 7.036 6.68 4.141 7.56a.88.88 0 1 1-.511-1.684c3.323-1.01 8.849-.814 12.34 1.258a.88.88 0 0 1-.898 1.514">
+								</path>
+							</g>
+						</svg>
+					</a>
+					<a href="#overlay" class="menu-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+					<div id="overlay" class="nav navbar__nav popup-nav u-clearfix">
+
+						<ul class="menu nav__menu u-clearfix">
+							<li><a href="#" class="menu__item">Premium</a></li>
+							<li><a href="#" class="menu__item">幫助中心</a></li>
+							<li><a href="#" class="menu__item">下載</a></li>
+							<li class="menu__Divider"></li>
+							<li><a href="#" class="menu__item">註冊</a></li>
+							<li><a href="#" class="menu__item">登入</a></li>
+						</ul>
+						<a href="#!" class="popup-close-bg"></a>
+						<a href="#!" class="popup-close">
+							<span></span>
+							<span></span>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</header>
+		<!-- End header -->
+
+		<!-- Strat section -->
+		<section class="main">
+
+			<!-- Start jumbotron -->
+			<div class="jumbotron">
+				<div class=" owl-carousel owl-theme">
+					<div class="jumbotron__item">
+						<div class="container">
+							<div class="jtext1">
+								<div class="j1text ">透過<span>PlayStation</span>® 播放<span>Spotify</span>。 </div>
+								<div class="btn-group--center">
+									<a href="#" class="btn btn--primary btn--md">體驗更多</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="jumbotron__item">
+						<div class="container">
+							<div class="jtext1">
+								<div class="j1text ">透過<span>PlayStation</span>® 播放<span>Spotify</span>。 </div>
+								<div class="btn-group--center">
+									<a href="#" class="btn btn--primary btn--md">體驗更多</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="jumbotron__item">
+						<div class="container">
+							<div class="jtext1">
+								<div class="j1text ">透過<span>PlayStation</span>® 播放<span>Spotify</span>。 </div>
+								<div class="btn-group--center">
+									<a href="#" class="btn btn--primary btn--md">體驗更多</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<span class="explore_test">
+					瞭解SPOTIFY
+				</span>
+
+				<a href="#whatsOn" class="explore at_top">
+					<i class="fa fa-angle-double-down"></i>
+					<!-- <i class="fab fa-instagram"></i> -->
+				</a>
+			</div>
+
+			<!-- End jumbotron structure -->
+
+			<!-- Start whatsOn -->
+			<div id="whatsOn" class="whatsOn">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-7 col-sm-push-5 col-md-5 col-md-push-7">
+							<div class="info">
+								<h2 class="info__title color-third"><span>Spotify</span> 上有些什麼？</h2>
+								<h3 class="info__subtitle color-third">音樂</h3>
+								<p class="info__text color-black">Spotify 上有超過數百萬種歌曲，你可以播放最喜愛的歌曲、發掘新的音樂，並打造你的完美收藏</p>
+								<h3 class="info__subtitle color-third">播放列表</h3>
+								<p class="info__text color-black">你可以找到由樂迷和專家們共同打造、配合不同心情的呈現播放清單。</p>
+								<h3 class="info__subtitle color-third">最新發行</h3>
+								<p class="info__text color-black">聆聽本週的最新的最新的單曲和專輯，並瞧瞧前50大熱門歌曲有哪些。</p>
+								<!-- <a href="#" class="btn info__btn">BOOKING</a> -->
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-5 col-sm-pull-7 col-md-6 col-md-pull-5">
+							<div class="album u-clearfix">
+								<div class="album-art">
+									<div class="imgbox">
+										<div class="imgbox__inner imgbox__inner-b">
+											<div class="image" style="background-image: url(images/images6.jpg);"></div>
+										</div>
+									</div>
+								</div>
+								<div class="album-art hidden-sm">
+									<div class="imgbox">
+										<div class="imgbox__inner imgbox__inner-b">
+											<div class="image" style="background-image: url(images/images5.jpg);"></div>
+										</div>
+									</div>
+								</div>
+								<div class="album-art">
+									<div class="imgbox">
+										<div class="imgbox__inner imgbox__inner-b">
+											<div class="image" style="background-image: url(images/images.jpeg);"></div>
+										</div>
+									</div>
+								</div>
+								<div class="album-art">
+									<div class="imgbox">
+										<div class="imgbox__inner imgbox__inner-b">
+											<div class="image" style="background-image: url(images/images2.jpg);"></div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End whatsOn -->
+
+			<!-- Start Albums -->
+			<div class="albums ">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-4">
+							<div class="info">
+								<h2 class="info__title color-white">超級簡單</h2>
+								<h3 class="info__subtitle ">搜尋</h3>
+								<p class="info__text color-white">知道自己想要聽些什麼嗎？只要搜尋然後按下「播放」即可。</p>
+								<h3 class="info__subtitle ">瀏覽</h3>
+								<p class="info__text color-white">立即查看最新的排行榜、全新發佈內容超棒的播放清單。</p>
+								<h3 class="info__subtitle ">最新發行</h3>
+								<p class="info__text color-white">在每週一裡用你專屬的個人播放清單欣賞新音樂，或輕鬆愜意地聆聽電台。</p>
+							</div>
+
+						</div>
+						<div class="col-xs-12 col-sm-8">
+							<div class="phone-group">
+								<div class="row">
+									<div class="col-xs-4">
+										<div class="phone phone1">
+											<div class="phone_block ">
+												<div class="top">
+													<div class="camera"></div>
+													<div class="earpiece"></div>
+												</div>
+												<div class="screen">
+													<div class="pages">
+														<div class="page page1">
+															<div class="phone-info ">
+																<div class="phone-header-top">
+																	<div class="phone-header  u-clearfix">
+																		<div class="phone-header-left">
+																			<div class="signal">
+																				<span></span>
+																				<span></span>
+																				<span></span>
+																				<span></span>
+																			</div>
+																		</div>
+																		<div class="phone-header-right"><i
+																				class="fas fa-battery-three-quarters"></i>
+																		</div>
+																	</div>
+																	<div class="phone-header-text">
+																		<div class="phone-header-tittle">BROWSE</div>
+																		<span><i class="fas fa-bars"></i></span>
+																	</div>
+																</div>
+																<div class="phone-content-bottom">
+																	<div class="row ">
+																		<div class="col-xs-6">
+																			<div class="phone-thumbnail">
+																				<div class="imgbox ">
+																					<div
+																						class="imgbox__inner imgbox__inner-1-1">
+																						<div class="image"
+																							style="background-image: url(images/images4.jpg);">
+																						</div>
+																					</div>
+																				</div>
+																				<div class="phone-thumbnail-content">
+																					<span
+																						class="phone-thumbnail-title">Family
+																						members lie </span>
+																					<span
+																						class="phone-thumbnail-detail">Try
+																						1 month free </span>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-xs-6">
+																			<div class="phone-thumbnail">
+																				<div class="imgbox ">
+																					<div
+																						class="imgbox__inner imgbox__inner-1-1">
+																						<div class="image"
+																							style="background-image: url(images/images2.jpg);">
+																						</div>
+																					</div>
+																				</div>
+																				<div class="phone-thumbnail-content">
+																					<span
+																						class="phone-thumbnail-title">Family
+																						members lie </span>
+																					<span
+																						class="phone-thumbnail-detail">Try
+																						1 month free </span>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="phone-content">
+																		<div class="phone-content-item u-clearfix">
+																			<div class="phone-content-item-left"><i
+																					class="fab fa-audible"></i>
+																				<span class="phone-span">Charts</span>
+																			</div>
+																			<div class="phone-content-item-right"> <i
+																					class="fa fa-angle-right"></i></div>
+																		</div>
+																		<div class="phone-content-item u-clearfix">
+																			<div class="phone-content-item-left"><i
+																					class="fas fa-audio-description"></i></i>
+																				<span class="phone-span">New releases</span>
+																			</div>
+																			<div class="phone-content-item-right"> <i
+																					class="fa fa-angle-right"></i></div>
+																		</div>
+																		<div class="phone-content-item u-clearfix">
+																			<div class="phone-content-item-left"><i
+																					class="fa fa-keyboard"></i></i></i>
+																				<span class="phone-span">Discover</span></div>
+																			<div class="phone-content-item-right"> <i
+																					class="fa fa-angle-right"></i></div>
+																		</div>
+																		<div class="phone-content-item u-clearfix">
+																			<div class="phone-content-item-left"><i
+																					class="fa fa-laptop-medical"></i>
+																				<span class="phone-span">Concerts</span> </div>
+																			<div class="phone-content-item-right"> <i
+																					class="fa fa-angle-right"></i></div>
+																		</div>
+																	</div>
+																	<div class="phone-content-bottom-text">
+																		<div>GENRES & MOODS</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="button"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-4">
+										<div class="phone phone2">
+											<div class="phone_block">
+												<div class="top">
+													<div class="camera"></div>
+													<div class="earpiece"></div>
+												</div>
+												<div class="screen">
+													<div class="pages">
+														<div class="page page2">
+															<div class="phone-info ">
+																<div class="phone-header-top u-clearfix">
+																	<div class="phone-header  u-clearfix">
+																		<div class="phone-header-left">
+																			<div class="signal">
+																				<span></span>
+																				<span></span>
+																				<span></span>
+																				<span></span>
+																			</div>
+																		</div>
+																		<div class="phone-header-right"><i
+																				class="fas fa-battery-three-quarters"></i>
+																		</div>
+																	</div>
+																	<div class="phone-header-icon">
+																		<div class="phone-header-icon-left"><i class="fas fa-angle-left"></i></div>
+																		<div  class="phone-header-icon-right">
+																			<span></span>
+																			<span></span>
+																			<span></span>
+																		</div>
+																	</div>
+																</div>
+																<div class="phone-content-bottom">
+																	<div class="row ">
+																		<div class="col-xs-6 col-xs-push-3 ">
+																			<div class="phone-thumbnail">
+																				<div class="imgbox ">
+																					<div
+																						class="imgbox__inner imgbox__inner-1-1">
+																						<div class="image"
+																							style="background-image: url(images/images7.jpg);">
+																						</div>
+																					</div>
+																				</div>
+																				
+																			</div>
+																		</div>
+																		
+																	</div>
+																	<div class="phone-thumbnail-content">
+																		<span
+																			class="phone-thumbnail-title">Mumford & Sons  </span>
+																			<div class="btn btn-sm">FOLLOWING</div>
+																		<span
+																			class="phone-thumbnail-detail">2 FOLLOWERS BY SPOTIFY </span>
+																		<div class="phone-thumbnail-cir"> 
+																			<span></span>
+																			<span></span>
+																		</div>
+																		<div class="btn btn-lg"><div></div></div>
+																		<div class="offline u-clearfix">
+																			<div class="offline-text">
+																				Avallable Offline
+																			</div>
+																			<div class="offline-icon">
+																				<i class="fas fa-toggle-on"></i>
+																			</div>
+																		</div>
+																	</div> 
+																</div>
+
+																<div class="phone-content">
+																	<div class="phone-content-item u-clearfix">
+																		<div class="phone-content-item-left">
+																			I JUST Wanna: Ride (feat. Kid Zordon...<br>
+																			<span>Yook - the Year Two Thousand &...</span>
+																		</div>
+																		<div class="phone-content-item-right">
+																			<div class="phone-content-item-icon">
+																				<div></div>
+																				<div></div>
+																				<div></div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="phone-content-item u-clearfix">
+																		<div class="phone-content-item-left">
+																			No Eyes (feat jaw) - Radio Edit<br>
+																			<span>Claptone + No Eyes (feat jaw)</span>
+																		</div>
+																		<div class="phone-content-item-right">
+																			<div class="phone-content-item-icon">
+																				<div></div>
+																				<div></div>
+																				<div></div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="phone-content-item u-clearfix">
+																		<div class="phone-content-item-left">
+																			Heartbreaker<br>
+																			<span>MSTRKRFT Fist of God...</span>
+																		</div>
+																		<div class="phone-content-item-right">
+																			<div class="phone-content-item-icon">
+																				<div></div>
+																				<div></div>
+																				<div></div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="button"></div>
+												</div>
+											</div>
+										</div>
+										<div class="phone phone3">
+											<div class="phone_block ">
+												<div class="top">
+													<div class="camera"></div>
+													<div class="earpiece"></div>
+												</div>
+												<div class="screen">
+													<div class="pages">
+														<div class="page page3">
+															<div class="phone-info ">
+																<div class="phone-header-top">
+																	<div class="phone-header  u-clearfix">
+																		<div class="phone-header-left">
+																			<div class="signal">
+																				<span></span>
+																				<span></span>
+																				<span></span>
+																				<span></span>
+																			</div>
+																		</div>
+																		<div class="phone-header-right"><i
+																				class="fas fa-battery-three-quarters"></i>
+																		</div>
+																	</div>
+																	<div class="phone-header-text">
+																		<div class="phone-header-subtitle">PLAYING FROM PLAYLIST</div>
+																		<div class="phone-header-tittle">Christmas Classics</div>
+																		<span><i class="fas fa-angle-down"></i></span>
+																	</div>
+																</div>
+																<div class="phone-content-bottom">
+																	<div class="row ">
+																		<div class="col-xs-10 col-xs-push-1 ">
+																			<div class="phone-thumbnail">
+																				<div class="imgbox ">
+																					<div
+																						class="imgbox__inner imgbox__inner-1-1">
+																						<div class="image"
+																							style="background-image: url(images/images8.jpg);">
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="phone-thumbnail-content">
+																		<div class="phone-thumbnail-content_left_icon">
+																			<div></div>
+																			<div></div>
+																		</div>
+																		<div class="phone-thumbnail-content_right_icon">
+																			<div></div>
+																			<div></div>
+																			<div></div>
+																		</div>
+																		<span
+																			class="phone-thumbnail-title">The Happiest Christmas Tree </span>
+																	
+																		<span
+																			class="phone-thumbnail-detail">Nat King Cole </span>
+																	
+																	
+																	
+																	</div> 
+																</div>	
+																<div class="phone-content">
+																	<div class="phone-content_time_Start">0:06</div>
+																	<div class="phone-content_time_End">-1:42</div>
+																	<div class="phone-content_schedule">
+																		<span></span>
+																		<span></span>
+																	</div>
+																</div>
+																<div class="phone-play">
+																	
+																	<div class="phone-play_random"><i class="fas fa-random"></i></div>
+																	<div class="phone-play_FastForward"><i class="fas fa-step-forward"></i></div>
+																	<div class="phone-pla_play">
+																		<div class="phone-pla_play_circle">
+																			<span></span>
+																			<span></span>
+																		</div>	
+																	</div>
+																	<div class="phone-pla_reverse"><i class="fas fa-step-forward"></i></div>
+																	<div class="phone-pla_cycle"><i class="fas fa-reply"></i></div>
+																</div>
+
+
+																<span class="devices_Avaliable">Devices Avaliable</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="button"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-4">
+										<div class="phone phone1">
+											<div class="phone_block ">
+												<div class="top">
+													<div class="camera"></div>
+													<div class="earpiece"></div>
+												</div>
+												<div class="screen">
+													<div class="pages">
+														<div class="page page1">
+															<div class="phone-info ">
+																<div class="phone-header-top">
+																	<div class="phone-header  u-clearfix">
+																		<div class="phone-header-left">
+																			<div class="signal">
+																				<span></span>
+																				<span></span>
+																				<span></span>
+																				<span></span>
+																			</div>
+																		</div>
+																		<div class="phone-header-right"><i
+																				class="fas fa-battery-three-quarters"></i>
+																		</div>
+																	</div>
+																	<div class="phone-header-text">
+																		<div class="phone-header-tittle">BROWSE</div>
+																		<span><i class="fas fa-bars"></i></span>
+																	</div>
+																</div>
+																<div class="phone-content-bottom">
+																	<div class="row ">
+																		<div class="col-xs-6">
+																			<div class="phone-thumbnail">
+																				<div class="imgbox ">
+																					<div
+																						class="imgbox__inner imgbox__inner-1-1">
+																						<div class="image"
+																							style="background-image: url(images/images9.jpg);">
+																						</div>
+																					</div>
+																				</div>
+																				<div class="phone-thumbnail-content">
+																					<span
+																						class="phone-thumbnail-title">Family
+																						members lie </span>
+																					<span
+																						class="phone-thumbnail-detail">Try
+																						1 month free </span>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="col-xs-6">
+																			<div class="phone-thumbnail">
+																				<div class="imgbox ">
+																					<div
+																						class="imgbox__inner imgbox__inner-1-1">
+																						<div class="image"
+																							style="background-image: url(images/images10.jpeg);">
+																						</div>
+																					</div>
+																				</div>
+																				<div class="phone-thumbnail-content">
+																					<span
+																						class="phone-thumbnail-title">Family
+																						members lie </span>
+																					<span
+																						class="phone-thumbnail-detail">Try
+																						1 month free </span>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="phone-content">
+																		<div class="phone-content-item u-clearfix">
+																			<div class="phone-content-item-left"><i
+																					class="fab fa-audible"></i>
+																				<span class="phone-span">Charts</span>
+																			</div>
+																			<div class="phone-content-item-right"> <i
+																					class="fa fa-angle-right"></i></div>
+																		</div>
+																		<div class="phone-content-item u-clearfix">
+																			<div class="phone-content-item-left"><i
+																					class="fas fa-audio-description"></i></i>
+																				<span class="phone-span">New releases</span>
+																			</div>
+																			<div class="phone-content-item-right"> <i
+																					class="fa fa-angle-right"></i></div>
+																		</div>
+																		<div class="phone-content-item u-clearfix">
+																			<div class="phone-content-item-left"><i
+																					class="fa fa-keyboard"></i></i></i>
+																				<span class="phone-span">Discover</span></div>
+																			<div class="phone-content-item-right"> <i
+																					class="fa fa-angle-right"></i></div>
+																		</div>
+																		<div class="phone-content-item u-clearfix">
+																			<div class="phone-content-item-left"><i
+																					class="fa fa-laptop-medical"></i>
+																				<span class="phone-span">Concerts</span> </div>
+																			<div class="phone-content-item-right"> <i
+																					class="fa fa-angle-right"></i></div>
+																		</div>
+																	</div>
+																	<div class="phone-content-bottom-text">
+																		<div>GENRES & MOODS</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="bottom">
+													<div class="button"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+			<!-- End Albums -->
+
+			<!-- Start Devices -->
+			<div class="devices">
+				<div class="container">
+					<!-- <div class="elements"></div> -->
+					<div class="imgbox">
+						<img src="./images/all-devices.svg" alt="">
+					</div>
+					<div class="info">
+						<h2 class="info__subtitle color-white">一個帳戶。在各種裝置上播放</h2>
+						<div class="devices-group ">
+							<ul class="devices-group-item devices-group-item_left ">
+								<li class="devices-group--list">
+									<span>行動裝置</span>
+								</li>
+								<li class="devices-group--list">
+									<span>電腦</span>
+								</li>
+								<li class="devices-group--list">
+									<span>平板電腦</span>
+								</li>
+								<li class="devices-group--list">
+									<span>汽車</span>
+								</li>
+							</ul>
+							<ul class="devices-group-item devices-group-item_right">
+								<li class="devices-group--list">
+									<a href="#">PlayStation</a>
+								</li>
+								<li class="devices-group--list">
+									<a href="#">Xbox</a>
+								</li>
+								<li class="devices-group--list">
+									<a href="#">電視</a>
+								</li>
+								<li class="devices-group--list">
+									<a href="#">喇叭</a>
+								</li>
+								<li class="devices-group--list">
+									<a href="#">網路播放器</a>
+								</li>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Devices -->
+
+			<!-- Start Subscriptions -->
+			<div class="subscriptions">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-10">
+							<div class="info">
+								<h2 class="info__title color-white">立即享受音樂</h2>
+								<p class="info__text color-white">免費收聽<br>或者改用Premium，在任何地方隨選即播。</p>
+								<div class="introduction info__text-color">
+									<h3 class="info__subtitle subscriptions-color">Spotify</h3>
+									<p class="info__text color-white">
+										每月只要 
+										<span class="info__text_Emphasize">
+											<span class="ft-700">
+												NT$0.00 
+											</span>元
+										</span>
+									</p>
+								</div>
+								<div class="info_Suggest">
+									<p class="info__text color-white">聆聽你最喜愛的專輯與藝人，以及偶爾會出現的廣告內容。</p>
+								</div>
+								<div class="info-btn-group">
+									<a href="#" class="btn btn--primary btn--sm">立即使用SPOTIFY免費版</a>
+								</div>
+								<div class="introduction introduction-row">
+									<div class="introduction-top  u-clearfix">
+										<div class="introduction-left">
+											<h3 class="info__subtitle subscriptions-color">Spotify Premium</h3>
+										</div>
+										<div class="introduction-right">
+											<!-- start -->
+											<p class="info__text  ">									
+												<span class="info__text_Emphasize">
+													<span class="ft-700">
+														NT$ 19.00
+													</span>
+												</span>
+												/3個月
+											</p>
+											<!-- end -->
+										</div>
+									</div>					
+									<div class="introduction-bottom  u-clearfix">
+										<div class="introduction-left">
+											<p class="info__text">家庭<span>優惠方案實施中</span></p>
+										</div>
+										<div class="introduction-right">
+											<p class="info__text color-white"><span>之後只要 NT$ 149.00 /月</span></p>
+										</div>
+									</div>
+								</div>
+								<div class="info_Suggest">
+									<p class="info__text color-white">
+										<span>隨選即播</span>
+										<br>
+										<span>離線收聽</span>
+										<br>
+										<span>沒有廣告</span>
+										<br>
+										<span>高音質音效</span>
+										</p>
+								</div>
+								<a href="#" class="btn btn--primary btn--sm">註冊成為 Spotify Premium 會員</a>	
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-2">
+							<div class="phone phone3">
+								<div class="phone_block ">
+									<div class="top">
+	
+										<div class="subscriptions-earpiece"></div>
+									</div>
+									<div class="screen">
+										<div class="pages">
+											<div class="page page3">
+												<div class="phone-info ">
+													<div class="phone-header-top">
+														
+														<div class="phone-header-text">
+															<div class="phone-header-subtitle">PLAYING FROM PLAYLIST</div>
+															<div class="phone-header-tittle">Christmas Classics</div>
+															<span><i class="fas fa-angle-down"></i></span>
+														</div>
+													</div>
+													<div class="phone-content-bottom">
+														<div class="row ">
+															<div class="col-xs-10 col-xs-push-1 ">
+																<div class="phone-thumbnail">
+																	<div class="imgbox ">
+																		<div
+																			class="imgbox__inner imgbox__inner-1-1">
+																			<div class="image"
+																				style="background-image: url(images/images13.jpg);">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="phone-thumbnail-content">
+															<div class="phone-thumbnail-content_left_icon">
+																<div></div>
+																<div></div>
+															</div>
+															<div class="phone-thumbnail-content_right_icon">
+																<div></div>
+																<div></div>
+																<div></div>
+															</div>
+															<span
+																class="phone-thumbnail-title">The Happiest Christmas Tree </span>
+														
+															<span
+																class="phone-thumbnail-detail">Nat King Cole </span>
+														
+												
+														</div> 
+													</div>	
+													<div class="phone-content">
+														<div class="phone-content_time_Start">0:06</div>
+														<div class="phone-content_time_End">-1:42</div>
+														<div class="phone-content_schedule">
+															<span></span>
+															<span></span>
+														</div>
+													</div>
+													<div class="phone-play">
+														
+														<div class="phone-play_random"><i class="fas fa-random"></i></div>
+														<div class="phone-play_FastForward"><i class="fas fa-step-forward"></i></div>
+														<div class="phone-pla_play">
+															<div class="phone-pla_play_circle">
+																<span></span>
+																<span></span>
+															</div>	
+														</div>
+														<div class="phone-pla_reverse"><i class="fas fa-step-forward"></i></div>
+														<div class="phone-pla_cycle"><i class="fas fa-reply"></i></div>
+													</div>
+			
+			
+													<span class="devices_Avaliable">Devices Avaliable</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="button"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="subscriptions_Terms">
+					<p class="info__text color-white">之後只要 NT$ 149.00 /月，本優惠不適用已試用 Premium 的使用者。
+						<a href="#"> 
+							須遵守想關條款。
+						</a>
+					</p>
+				</div>
+
+
+
+					
+				<!-- Start phone -->
+			
+			
+					
+			
+		
+			
+				<!-- End phone -->
+
+			</div>
+			<!-- End Subscriptions -->
+
+
+		</section>
+		<!-- End section -->
+
+		<!-- Strat footer -->
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-2">
+						<a href="#" class="footer__logo">
+							<svg viewBox="0 0 63 20" xmlns="http://www.w3.org/2000/svg"
+								preserveAspectRatio="xMidYMin meet">
+								<g fill-rule="evenodd" class="svelte-1gcdbl9">
+									<path
+										d="M61.842 9.506a1.02 1.02 0 0 1-1.023-1.024c0-.562.453-1.03 1.029-1.03a1.02 1.02 0 0 1 1.023 1.024 1.03 1.03 0 0 1-1.029 1.03m.006-1.952a.915.915 0 0 0-.922.928c0 .51.394.921.916.921a.916.916 0 0 0 .922-.927.908.908 0 0 0-.916-.922m.226 1.027l.29.406h-.244l-.26-.372h-.225v.372h-.204V7.912h.48c.249 0 .413.128.413.343 0 .176-.102.284-.25.326m-.172-.485h-.267v.34h.267c.133 0 .212-.065.212-.17 0-.11-.08-.17-.212-.17m-12.804-3.52a1.043 1.043 0 1 0-.001 2.086 1.043 1.043 0 0 0 0-2.087m.72 2.89h-1.454a.107.107 0 0 0-.106.107v6.346c0 .06.047.107.106.107h1.455a.107.107 0 0 0 .107-.107V7.572a.107.107 0 0 0-.107-.107m3.233.006v-.2c0-.592.227-.856.736-.856.303 0 .546.06.82.152a.106.106 0 0 0 .14-.102V5.24a.107.107 0 0 0-.076-.102 3.993 3.993 0 0 0-1.21-.174c-1.343 0-2.053.757-2.053 2.188v.308h-.699a.107.107 0 0 0-.107.106v1.257c0 .059.048.107.107.107h.699v4.99c0 .058.047.106.106.106h1.455a.107.107 0 0 0 .106-.107v-4.99h1.358l2.081 4.99c-.236.523-.468.628-.785.628-.257 0-.527-.077-.803-.228a.109.109 0 0 0-.084-.008.106.106 0 0 0-.063.058l-.493 1.081a.106.106 0 0 0 .045.138c.515.279.98.398 1.554.398 1.074 0 1.668-.5 2.191-1.847L60.6 7.617a.106.106 0 0 0-.099-.146h-1.514a.107.107 0 0 0-.1.072l-1.552 4.431-1.7-4.434a.106.106 0 0 0-.099-.069h-2.485m-5.577-.006h-1.6V5.828a.106.106 0 0 0-.107-.106h-1.455a.107.107 0 0 0-.106.106v1.637h-.7a.106.106 0 0 0-.106.107v1.25c0 .059.048.107.106.107h.7v3.234c0 1.308.65 1.97 1.934 1.97.522 0 .954-.107 1.362-.338a.106.106 0 0 0 .054-.093v-1.19a.106.106 0 0 0-.154-.096c-.28.141-.551.206-.854.206-.467 0-.675-.211-.675-.686V8.929h1.6a.106.106 0 0 0 .107-.107v-1.25a.106.106 0 0 0-.106-.107m-7.671-.133c-1.96 0-3.497 1.51-3.497 3.437 0 1.907 1.526 3.4 3.473 3.4 1.967 0 3.508-1.504 3.508-3.424 0-1.914-1.53-3.413-3.484-3.413m0 5.362c-1.043 0-1.83-.838-1.83-1.95 0-1.115.76-1.924 1.806-1.924 1.05 0 1.84.838 1.84 1.95 0 1.115-.763 1.924-1.816 1.924m-7.014-5.362c-.82 0-1.492.323-2.046.984v-.744a.107.107 0 0 0-.106-.107h-1.455a.107.107 0 0 0-.106.107v8.27c0 .058.048.106.106.106h1.455a.107.107 0 0 0 .106-.106v-2.61c.555.621 1.227.925 2.046.925 1.522 0 3.063-1.172 3.063-3.412s-1.54-3.413-3.063-3.413m1.372 3.413c0 1.14-.703 1.937-1.709 1.937-.995 0-1.745-.833-1.745-1.937s.75-1.937 1.745-1.937c.99 0 1.71.814 1.71 1.937m-8.437-1.81c-1.624-.388-1.913-.66-1.913-1.231 0-.54.508-.903 1.264-.903.732 0 1.459.275 2.22.843a.107.107 0 0 0 .15-.023l.794-1.119a.107.107 0 0 0-.02-.144c-.906-.728-1.927-1.081-3.12-1.081-1.755 0-2.98 1.052-2.98 2.559 0 1.615 1.057 2.187 2.884 2.628 1.554.358 1.817.658 1.817 1.195 0 .594-.53.963-1.385.963-.948 0-1.721-.32-2.587-1.068a.11.11 0 0 0-.078-.026.105.105 0 0 0-.073.038l-.89 1.058a.105.105 0 0 0 .011.148 5.303 5.303 0 0 0 3.581 1.373c1.89 0 3.112-1.033 3.112-2.631 0-1.351-.807-2.098-2.787-2.58M9.507.305a9.41 9.41 0 1 0 0 18.82 9.41 9.41 0 0 0 0-18.82m4.316 13.572a.586.586 0 0 1-.807.195c-2.21-1.35-4.99-1.655-8.266-.907a.586.586 0 1 1-.261-1.143c3.584-.82 6.659-.467 9.139 1.049.276.169.363.53.195.806m1.15-2.562a.734.734 0 0 1-1.008.242c-2.529-1.555-6.385-2.005-9.377-1.097a.735.735 0 0 1-.426-1.404c3.418-1.037 7.666-.534 10.57 1.25a.734.734 0 0 1 .242 1.01m.1-2.669C12.04 6.846 7.036 6.68 4.141 7.56a.88.88 0 1 1-.511-1.684c3.323-1.01 8.849-.814 12.34 1.258a.88.88 0 0 1-.898 1.514">
+									</path>
+								</g>
+							</svg>
+						</a>
+					</div>
+					<div class="col-xs-12 col-md-2 col-sm-4">
+						<ul class="list">
+							<li><a href="#" class="list__title">公司簡介</a></li>
+							<li><a href="#" class="list__link">關於我們</a></li>
+							<li><a href="#" class="list__link">職位空缺</a></li>
+							<li><a href="#" class="list__link">For the Record</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-md-2 col-sm-4">
+						<ul class="list">
+							<li><a href="#" class="list__title">社群</a></li>
+							<li><a href="#" class="list__link">藝人專屬</a></li>
+							<li><a href="#" class="list__link">開發商</a></li>
+							<li><a href="#" class="list__link">投資者</a></li>
+							<li><a href="#" class="list__link">供應商</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-md-2 col-sm-4">
+						<ul class="list">
+							<li><a href="#" class="list__title">常用連結</a></li>
+							<li><a href="#" class="list__link">幫助中心</a></li>
+							<li><a href="#" class="list__link">網路播放器</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-md-4 col-sm-12">
+						<div class="footer__social-icons u-clearfix">
+							<div class="footer__icon-group">
+								<a href="#" class="icon-btn color-white">
+									<i class="fab fa-instagram"></i>
+								</a><a href="#" class="icon-btn color-white">
+									<i class="fab fa-twitter"></i>
+								</a><a href="#" class="icon-btn color-white">
+									<i class="fab fa-facebook-square"></i>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row ">
+					<div class="col-xs-12 u-clearfix">
+						<div class="fooer_banner-Icon">
+							<span>台灣</span>
+							<img src="https://country-flags.scdn.co/flags/tw.svg" alt="" class="svelte-11cxugd">
+						</div>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-9">
+						<div class="static__pages ">
+							<ul class="u-clearfix">
+								<li><a href="#">法律條款</a></li>
+								<li><a href="#">隱私權中心</a></li>
+								<li><a href="#">私隱政策</a></li>
+								<li><a href="#">Cookies</a></li>
+								<li><a href="#">關於廣告</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<div class="static__copyright color-grey">
+							© 2020 Spotify AB
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+
+		<!-- End footer -->
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/plugins/owl-carousel/owl.carousel.min.js"></script>
+		<script src="js/custom.js"></script>
+	</div>
+</body>
+
+</html>
