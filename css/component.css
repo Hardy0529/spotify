@@ -681,7 +681,7 @@ img{
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	background: rgba(0, 0, 0, .1.5);
+	background: rgba(0, 0, 0, .15);
 }
 
 @media(min-width: 768px){
@@ -987,7 +987,6 @@ img{
 	background: none;
 	border: 1.5px solid green;
 	font-size: 10px;
-	padding: 4px 16px;
 	color: #fff;
 	margin-bottom: 8px;
 	font-size: 12px;
@@ -1024,7 +1023,7 @@ img{
 	background: none;
 	background-color: #1ED760;
 	font-size: 10px;
-	padding: 10px 45px;
+	padding: 0px 45px;
 	border-radius: 40px;
 	color: #fafafa;
 	margin-bottom: 8px;
@@ -1643,16 +1642,16 @@ img{
 		padding-bottom: 0px;
 	}
 	.page.page2 .phone-thumbnail-content .btn-sm{
-		-webkit-transform : scale(0.50);
+		-webkit-transform : scale(0.38);
 		
 		font-size: 12px;
-		margin-top: -2px;
+		margin-top: -8px;
 		margin-bottom: 0px;
 	}
 	.page.page2 .phone-thumbnail-content .phone-thumbnail-detail{
 		-webkit-transform : scale(0.45);
 		font-size: 12px;
-		margin-top: -4px;
+		margin-top: -9px;
 		padding-bottom: 0px;
 	}
 	.page.page2 .phone-thumbnail-content .phone-thumbnail-cir{
@@ -1665,10 +1664,10 @@ img{
 		margin-right: 0px;
 	}
 	.page.page2 .phone-thumbnail-content .btn-lg{
-		padding: 8px 33px;
+		padding: 0px 33px;
 		font-size: 12px;
-		-webkit-transform : scale(0.53);
-		margin-top: -3px;
+		-webkit-transform : scale(0.45);
+		margin-top: -6px;
 		margin-bottom: 5px;
 	}
 	.page.page2 .phone-thumbnail-content .btn-lg div{
@@ -1678,6 +1677,7 @@ img{
 	.page.page2 .phone-thumbnail-content .offline {
 		padding-top: 0px;
 		padding-bottom: 0px;
+		margin-top: -5px;
 	}
 	.page.page2 .phone-thumbnail-content .offline .offline-text{
 		font-size: 12px;
@@ -1707,7 +1707,7 @@ img{
 	
 		padding-bottom: 0px;
 		margin-bottom: 0px;
-		padding-top: 0px;
+		padding-top: 1px;
 		
 	}
 	.page2.page .phone-content .phone-content-item .phone-content-item-left{
